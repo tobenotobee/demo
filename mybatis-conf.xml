@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="useGeneratedKeys" value="false" />
+		<setting name="autoMappingBehavior" value="PARTIAL" />
+		<setting name="defaultExecutorType" value="SIMPLE" />
+		<setting name="defaultStatementTimeout" value="25" />
+		<setting name="safeRowBoundsEnabled" value="false" />
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="localCacheScope" value="SESSION" />
+		<setting name="jdbcTypeForNull" value="OTHER" />
+		<setting name="logImpl" value="LOG4J" />
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" />
+	</settings>
+
+	<typeAliases>
+		<!-- 系统权限 -->
+		<typeAlias type="cn.bluemobi.admin.model.SysAuth" alias="sysAuth" />
+		<typeAlias type="cn.bluemobi.admin.model.SysRole" alias="sysRole" />
+		<typeAlias type="cn.bluemobi.admin.model.SysRoleAuth" alias="sysRoleAuth" />
+		<typeAlias type="cn.bluemobi.admin.model.SysUser" alias="sysUser" />
+		<typeAlias type="cn.bluemobi.admin.model.Comment" alias="comment" />
+		<typeAlias type="cn.bluemobi.admin.model.SysCode" alias="sysCode" />
+		<typeAlias type="cn.bluemobi.admin.model.CirculatedPicture"
+			alias="circulatedPicture" />
+		<typeAlias type="cn.bluemobi.admin.model.SysBaseCode" alias="sysBaseCode" />
+		<typeAlias type="cn.bluemobi.admin.model.Agreement" alias="agreement" />
+		<typeAlias type="cn.bluemobi.admin.model.LoginLog" alias="loginLog" />
+		<typeAlias type="cn.bluemobi.admin.model.ImageFile" alias="imageFile" />
+		<typeAlias type="cn.bluemobi.admin.model.Activity" alias="activity" />
+		<typeAlias type="cn.bluemobi.admin.model.Tip" alias="tip" />
+		<typeAlias type="cn.bluemobi.admin.model.Area" alias="area" />
+		<typeAlias type="cn.bluemobi.admin.model.City" alias="city" />
+		<typeAlias type="cn.bluemobi.admin.model.LoginUser" alias="loginUser" />
+		<typeAlias type="cn.bluemobi.admin.model.MemberDetail"
+			alias="memberDetail" />
+
+
+
+
+		<!-- APP -->
+		<typeAlias type="cn.bluemobi.site.model.MemberToken" alias="memberToken" />
+	</typeAliases>
+
+</configuration>
